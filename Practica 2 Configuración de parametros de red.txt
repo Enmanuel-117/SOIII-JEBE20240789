@@ -1,0 +1,40 @@
+Practica 2: Configuración de parametros de red.
+José Enmanuel Bonilla E.
+20240789
+  
+   01  ifconfig
+   02  clear
+   03  sudo ifconfig ens33 0.0.0.0
+   04  ifconfig
+   05  sudo ifconfig ens33 192.168.247.252
+   06  ifconfig
+   07  clear
+   08  history
+
+Método 2 por DHCP:
+
+    1  sudo nano /etc/netplan/00-installer-config.yaml
+    
+network:
+  version: 2
+  renderer: networkd
+  ethernets:
+    ens33:
+      dhcp4: true
+
+
+    2  sudo netplan apply
+
+Método 3 por DHCP con nmcli:
+
+    9  sudo nmcli connection modify "Wired connection 1" ipv4.method auto
+   10  sudo nmcli connection up "Wired connection 1"
+
+Método 4 final por IP Directa y DNS
+
+   35  sudo nano /etc/netplan/00-installer-config.yaml
+   36  clear
+   37  sudo nano /etc/netplan/00-installer-config.yaml
+   38  sudo netplan apply
+   39  ifconfig
+
