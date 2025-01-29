@@ -1,0 +1,20 @@
+Practica 3: Gestion de Usuario y grupos
+José Enmanuel Bonilla Echavarria
+20240789
+
+Comandos sin limpiar. 
+
+    1  clear
+    2  sudo adduser enmanuel2
+    3  sudo usermod -aG sudo enmanuel2
+    4  getent group sudo
+    5  sudo groupadd guest
+    6  sudo adduser ejemplo2
+    7  sudo usermod -aG ejemplo2
+    8  sudo usermod -aG guest ejemplo2
+    9  getent guest
+   10  sudo getent group guest
+   11  sudo deluser ejemplo2
+   12  sudo delgroup guest
+   13  sudo deluser enmanuel2
+   14  history
