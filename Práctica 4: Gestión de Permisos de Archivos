@@ -1,0 +1,51 @@
+Practica 4: Gestion de Permisos de archivos
+José Enmanuel Bonilla Echavarria
+20240789
+
+Comandos sin limpiar. 
+
+  134  ls
+  135  cd Desktop/
+  136  mkdir materia
+  137  cd materia/
+  138  ls
+  139  touch estudiante.txt
+  140  vi estudiante.txt
+  141  ls
+  142  cd Desktop/
+  143  ls
+  144  mkdir Materia
+  145  cd Materia/
+  146  touch Estudiante.txt
+  147  vi
+  148  vi Estudiante.txt
+  149  ls
+  150  chmod 700 Estudiante.txt
+  151  ls -l Estudiante.txt
+  152  chmod 070 Estudiante.txt
+  153  ls -l Estudiante.txt
+  154  cd ..
+  155  mkdir Materia(copia)
+  156  mkdir Materiacopia
+  157  cp materia/estudiante.txt Materiacopia
+  158  cd materia
+  159  ls
+  160  cd Materia
+  161  cd ..
+  162  cp Materia/Estudiante.txt Materiacopia
+  163  chmod 700 Estudiante.txt
+  164  cd Materia
+  165  chmod 700 Estudiante.txt
+  166  cd ..
+  167  cp Materia/Estudiante.txt Materiacopia
+  168  cd Materiacopia/
+  169  ls
+  170  cd ..
+  171  rm Materiacopia
+  172  rmdir Materiacopia
+  173  cd Materiacopia
+  174  rm Estudiante.txt
+  175  cd ..
+  176  rmdir Materiacopia
+  177  clear
+  178  history
